@@ -24,13 +24,14 @@ public class MorningWorkOut {
         System.out.println("\nPull up completed");
     }
 
-        public static void sleep(double seconds){
+        public static void sleep(double seconds) {
 
             try {
                 Thread.sleep((long)(seconds*1000));
             } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+                e.printStackTrace();
             }
+
 
         }
 
