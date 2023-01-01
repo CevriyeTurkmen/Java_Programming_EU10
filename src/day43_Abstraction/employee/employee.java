@@ -12,8 +12,8 @@ public abstract class employee extends Person {
     public employee(String name, int age, char gender, int id, String jobTitle, double salary) {
         super(name, age, gender);
         this.id = id;
-        this.jobTitle = jobTitle;
-        this.salary = salary;
+        setJobTitle(jobTitle);
+        setSalary(salary);
     }
 
     public int getId() {
