@@ -4,6 +4,6 @@ public interface Playable {
 
     static boolean isFriednly=true;
 
-    public void playable();
+    public void play();
 
 }
