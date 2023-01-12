@@ -1,15 +1,13 @@
 package day43_Abstraction.employee;
 
-import day43_Abstraction.car.Car;
-
-public abstract class employee extends Person {
+public abstract class Employee extends Person {
 
 
     private final int id;
     private String jobTitle;
     private double salary;
 
-    public employee(String name, int age, char gender, int id, String jobTitle, double salary) {
+    public Employee(String name, int age, char gender, int id, String jobTitle, double salary) {
         super(name, age, gender);
         this.id = id;
         setJobTitle(jobTitle);
