@@ -33,6 +33,8 @@ public class ThrowVsThrows {
 
     public static void method1() throws InterruptedException {
         Thread.sleep(5000);
-
     }
+
+
+
 }
