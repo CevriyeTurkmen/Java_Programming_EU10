@@ -1,4 +1,4 @@
-package day43_Abstraction.employee;
+package day43_Abstraction.employeeTask;
 
 public final class Teacher extends Employee{
     public Teacher(String name, int age, char gender, int id, String jobTitle, double salary) {

@@ -2,7 +2,7 @@ package day44_Abstraction.animalTask;
 
 public interface Playable {
 
-    static boolean isFriednly=true;
+    static boolean isFriendly=true;
 
     public void play();
 

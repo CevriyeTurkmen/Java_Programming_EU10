@@ -1,10 +1,9 @@
-package day45_Abstraction_Interface.shape;
+package day45_Abstraction.shape;
 
-public class Cylinder extends Shape implements Volume{
+public class Cube extends Shape implements Volume{
 
 
-
-    public Cylinder(String name) {
+    public Cube(String name) {
         super(name);
     }
 

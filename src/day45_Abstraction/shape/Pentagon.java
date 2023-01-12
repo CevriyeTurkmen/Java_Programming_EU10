@@ -1,8 +1,8 @@
-package day45_Abstraction_Interface.shape;
+package day45_Abstraction.shape;
 
 
-public class Triangle extends Shape{
-    public Triangle(String name) {
+public class Pentagon extends Shape{
+    public Pentagon(String name) {
         super(name);
     }
 
