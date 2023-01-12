@@ -1,13 +1,25 @@
 package day45_Abstraction_Interface.shape;
+/*
+interface XX{
+}
+interface YY{
+}
+abstract class BB{
+}
+abstract class AA{
+}
+*/
 
-public class Circle extends Shape{
 
-private double radius;
-public final static double pi=3.14;
+public class Circle extends Shape {
 
-    public Circle(double radius) {
+    private double radius;
+
+    public final static double pi = 3.14;
+
+    public Circle( double radius) {
         super("Circle");
-        this.radius = radius;
+        setRadius(radius);
     }
 
     public double getRadius() {
@@ -15,25 +27,30 @@ public final static double pi=3.14;
     }
 
     public void setRadius(double radius) {
-        if (radius<0){
-            throw new RuntimeException("Invalid");
+        if(radius < 0){
+            throw new RuntimeException("Invalid Radius: "+radius);
         }
-
-        setRadius(radius);
+        this.radius = radius;
     }
 
+
+    @Override
     public double area() {
-        return radius*radius*pi;
+        return radius * radius * pi;
     }
 
+    @Override
     public double perimeter() {
-        return 2*radius*pi;
+        return 2 * radius * pi;
     }
 
+    @Override
     public String toString() {
         return "Circle{" +
-                super.toString() +
+                super.toString()+
                 ", radius=" + radius +
                 '}';
     }
+
+
 }

@@ -1,9 +1,8 @@
 package day45_Abstraction_Interface.shape;
 
-public class Cube extends Shape implements Volume{
 
-
-    public Cube(String name) {
+public class Triangle extends Shape{
+    public Triangle(String name) {
         super(name);
     }
 
@@ -14,12 +13,6 @@ public class Cube extends Shape implements Volume{
 
     @Override
     public double perimeter() {
-        return 0;
-    }
-
-
-    @Override
-    public double volume() {
         return 0;
     }
 }
