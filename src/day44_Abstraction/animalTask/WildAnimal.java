@@ -7,7 +7,4 @@ public interface WildAnimal {
     void hunt();//public access modifiers and abstract by default
 
 
-
-
-
 }
