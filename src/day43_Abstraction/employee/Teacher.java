@@ -6,12 +6,14 @@ public final class Teacher extends Employee{
     }
 
     @Override
-    public void sleep() {
-        System.out.println(getName()+" is teaching");
+    public void work() {
+        System.out.println(getName()+" is teaching.");
     }
 
     @Override
-    public void work() {
-        System.out.println(getName()+" sleeps 6 hours");
+    public void sleep() {
+        System.out.println(getName()+" is slepping 8 hours.");
     }
+
+
 }

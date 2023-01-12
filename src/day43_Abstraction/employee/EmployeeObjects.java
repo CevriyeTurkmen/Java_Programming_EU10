@@ -19,7 +19,7 @@ public class EmployeeObjects {
 
         tester.work();
         tester.sleep();
-        tester.bugreport();
+        tester.bugReport();
         tester.eat();
 
         System.out.println("-----------------------------------");
@@ -35,7 +35,6 @@ public class EmployeeObjects {
         teacher.work();
         teacher.sleep();
         teacher.eat();
-
 
 
 

@@ -3,12 +3,12 @@ package day43_Abstraction.employee;
 public abstract class Person {
     private String name;
     private int age;
-    private final char gender;
+    private char gender;
 
     public Person(String name, int age, char gender) {
         setName(name);
         setAge(age);
-        this.gender = gender;
+        setGender(gender);
     }
 
     public String getName() {
@@ -24,9 +24,8 @@ public abstract class Person {
     }
 
     public void setAge(int age) {
-
-        if (age<0){
-            throw new RuntimeException("Invalid");
+        if(age <= 0){
+            throw new RuntimeException("Invalid age: "+age);
         }
         this.age = age;
     }
@@ -35,10 +34,15 @@ public abstract class Person {
         return gender;
     }
 
+    public void setGender(char gender) {
+        this.gender = gender;
+    }
+
+
     public abstract void sleep();
 
     public void eat(){
-        System.out.println(name + " is eating baklava");
+        System.out.println(name+" is eating baklava");
     }
 
     @Override
@@ -49,4 +53,6 @@ public abstract class Person {
                 ", gender=" + gender +
                 '}';
     }
+
+
 }
