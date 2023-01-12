@@ -1,6 +1,7 @@
 package day45_Abstraction_Interface;
 
 public interface PropertiesOfInterface {
+
     int a = 100;  // static & final by default
     static int b = 200; // final by default
 
@@ -46,8 +47,6 @@ class Test implements PropertiesOfInterface{
         new Test().method4();
 
     }
-
-
 
 
 }
