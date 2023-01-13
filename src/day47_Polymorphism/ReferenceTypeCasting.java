@@ -1,4 +1,5 @@
-package day46_Polymorphism;
+package day47_Polymorphism;
+
 
 import day43_Abstraction.employeeTask.Employee;
 import day43_Abstraction.employeeTask.Person;
@@ -10,7 +11,7 @@ import day45_Abstraction.shape.Circle;
 import day45_Abstraction.shape.Shape;
 import day45_Abstraction.shape.Square;
 
-public class ReferenceTypeCastings {
+public class ReferenceTypeCasting {
 
     public static void main(String[] args) {
 
@@ -74,15 +75,6 @@ public class ReferenceTypeCastings {
 
         //  ( (Cube)s1 ).volume();
 
-
-
-
-
-
-
-
-
     }
-
 
 }
