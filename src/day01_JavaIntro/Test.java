@@ -1,19 +1,12 @@
 package day01_JavaIntro;
 
-import utilities.StringUtility;
+ public class Test {
 
-public class Test {
+   private int num=25;
 
-    public static void main(String[] args) {
+     public static void main(String[] args) {
+         Test obj=new Test();
 
-        String str = "Wooden Spoon";
-
-        StringUtility.printEachChar(str);
-
-
-
-    }
-
-
-
-}
+         System.out.println(obj.num);
+     }
+ }
