@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class BuildinFunctionalInterfaces1 {
@@ -69,6 +70,46 @@ public class BuildinFunctionalInterfaces1 {
                 "Jilili Jiwuer", "Ali Ismayilov"));
 
         employees.forEach(s -> System.out.println(s.charAt(0) + "." + s.charAt(s.lastIndexOf(" ") + 1)));
+
+        System.out.println("-------------------------------------------");
+
+        Function<int[], List<Integer>> convertToList = (a) -> {
+            List<Integer> result = new ArrayList<>();
+            for (int each : a) {
+                result.add(each);
+            }
+            return result;
+        };
+
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        List<Integer> l = convertToList.apply(arr);
+
+        System.out.println(l);
+
+
+        System.out.println("-------------------------------------------");
+        Function<List<Integer>, int[]> convertToArray = (a) -> {
+            int[] result = new int[a.size()];
+            for (int i = 0; i < a.size(); i++) {
+                result[i] = a.get(i);
+            }
+
+            return result;
+        };
+
+        List<Integer> numbers = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+
+        int[] result2 = convertToArray.apply(numbers);
+
+        System.out.println("-------------------------------------------");
+
+        // create a function that can return the maximum number from an int array
+
+        // create a function that can swap the first and last elements of an array
+
+        // Create a function that can reverse an array and returns it
+
+        // create a function that can reverse a List
 
 
 
